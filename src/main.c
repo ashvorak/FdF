@@ -11,13 +11,30 @@
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
-
-int main(int argc, char **argv)
+/*
+t_coor	**read_file(int fd)
 {
-    int     fd;
-    char    *line;
+    char	*line;
+    char	**arr;
+	t_coor	*coor;
 
-    (argc == 2) ? fd = open(argv[1], O_RDONLY) : exit(1);
-    while (get_next_line(fd, line))
-    return (0);
+    while (get_next_line(fd, &line))
+    {
+		
+    }
+    return (coor);
+}
+*/
+int	main(void)
+{
+    //int		fd;
+    //char	**map;
+	void	*mlx_ptr;
+	void	*win_ptr;
+
+	//(argc == 2) ? fd = open(argv[1], O_RDONLY) : exit(1);
+	mlx_ptr = mlx_init();
+	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "test");
+	mlx_loop(mlx_ptr);
+	return (0);
 }

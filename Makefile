@@ -10,15 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = oshvorak.filler
-
-VNAME = visual
+NAME = fdf
 
 LIB = lib.a
 
 CFLAGS = -Wall -Wextra -Werror -I$(INC)
 
-SRC = ./src/main.c \
+SRC = ./src/main.c
 
 GNL = ./lib/get_next_line/get_next_line.c
 
@@ -120,7 +118,7 @@ all: $(NAME)
 $(NAME): $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 	ar rc $(LIB) $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 	ranlib $(LIB)
-	gcc $(CFLAGS) $(SRC1) $(LIB) -o $(NAME)
+	gcc $(CFLAGS) $(SRC) $(LIB) -o $(NAME)
 
 clean:
 	/bin/rm -f $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
@@ -128,12 +126,3 @@ fclean:	clean
 	/bin/rm -f $(NAME) $(LIB)
 
 re: fclean all
-
-
-
-
-
-
-
-
-
