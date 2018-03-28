@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/21 17:17:23 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/28 17:29:31 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,18 @@
 
 typedef struct	s_coor
 {
-	double x;
-	double y;
-	double z; 
-}				t_coor;  
+	double	x;
+	double	y;
+	double	z;
+	int		color;
+}				t_coor;
+
+typedef struct	s_proj
+{
+	t_coor	**list;
+	char	*crd;
+	void	*mlx_ptr;
+	void	*win_ptr;
+}				t_proj; 
 
 #endif
