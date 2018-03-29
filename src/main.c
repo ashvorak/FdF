@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/29 17:46:33 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/29 17:59:07 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ t_proj *new_proj()
 }
 
 int	main(int argc, char **argv)
-//int	main(void)
 {
 	int i;
 	int j;
@@ -91,7 +90,6 @@ int	main(int argc, char **argv)
 	j = 0;
 	proj = new_proj();
 	(argc == 2) ? fd = open(argv[1], O_RDONLY) : exit(1);
-	//fd = open("../test_maps/10-2.fdf", O_RDONLY);
 	read_file(fd, proj);
 	while (i < proj->height)
 	{
