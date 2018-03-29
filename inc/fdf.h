@@ -6,13 +6,14 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/28 17:29:31 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/29 17:17:45 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 
+#include  <stdio.h>
 # include <fcntl.h>
 # include <stdlib.h>
 # include <errno.h>
@@ -33,9 +34,10 @@ typedef struct	s_coor
 typedef struct	s_proj
 {
 	t_coor	**list;
-	char	*crd;
 	void	*mlx_ptr;
 	void	*win_ptr;
+	int		width;
+	int		height;
 }				t_proj; 
 
 #endif

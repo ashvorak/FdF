@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 15:12:57 by oshvorak          #+#    #+#              #
-#    Updated: 2018/03/22 14:04:31 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/03/29 17:37:18 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -118,7 +118,7 @@ all: $(NAME)
 $(NAME): $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 	ar rc $(LIB) $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 	ranlib $(LIB)
-	gcc $(CFLAGS) $(SRC) $(LIB) -o $(NAME)
+	gcc $(CFLAGS) -lmlx -framework OpenGL -framework AppKit $(SRC) $(LIB) -o $(NAME)
 
 clean:
 	/bin/rm -f $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
