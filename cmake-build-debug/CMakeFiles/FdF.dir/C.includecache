@@ -21,6 +21,10 @@ errno.h
 /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
 ../lib/ft_printf/inc/ft_printf.h
 /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+../minilibx/mlx.h
+/Users/oshvorak/FdF/minilibx/mlx.h
+../minilibx_macos/mlx.h
+/Users/oshvorak/FdF/minilibx_macos/mlx.h
 
 /Users/oshvorak/FdF/lib/ft_atoi.c
 libft.h
@@ -358,7 +362,19 @@ stdlib.h
 string.h
 -
 
+/Users/oshvorak/FdF/minilibx/mlx.h
+
+/Users/oshvorak/FdF/minilibx_macos/mlx.h
+
 /Users/oshvorak/FdF/src/main.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/read_file.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/zoom.c
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h
 

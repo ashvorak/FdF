@@ -347,6 +347,12 @@
 		<Unit filename="/Users/oshvorak/FdF/src/main.c">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/read_file.c">
+			<Option target="FdF"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/zoom.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 15:12:57 by oshvorak          #+#    #+#              #
-#    Updated: 2018/03/29 17:37:18 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/03/30 13:24:07 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,11 @@ LIB = lib.a
 
 CFLAGS = -Wall -Wextra -Werror -I$(INC)
 
-SRC = ./src/main.c
+SRC = ./src/main.c \
+	./src/read_file.c \
+	./src/zoom.c \
+	./src/display.c \
+	./src/line.c	
 
 GNL = ./lib/get_next_line/get_next_line.c
 

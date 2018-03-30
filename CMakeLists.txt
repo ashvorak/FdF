@@ -92,4 +92,4 @@ add_executable(FdF
         lib/ft_tolower.c
         lib/ft_toupper.c
         lib/libft.h
-        src/main.c)
+        src/main.c src/read_file.c src/zoom.c)

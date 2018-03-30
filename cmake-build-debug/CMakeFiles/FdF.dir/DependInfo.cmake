@@ -89,6 +89,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/FdF/lib/ft_toupper.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/lib/ft_toupper.c.o"
   "/Users/oshvorak/FdF/lib/get_next_line/get_next_line.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o"
   "/Users/oshvorak/FdF/src/main.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/main.c.o"
+  "/Users/oshvorak/FdF/src/read_file.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/read_file.c.o"
+  "/Users/oshvorak/FdF/src/zoom.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/zoom.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

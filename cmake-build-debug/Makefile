@@ -2418,6 +2418,60 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/read_file.o: src/read_file.c.o
+
+.PHONY : src/read_file.o
+
+# target to build an object file
+src/read_file.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.o
+.PHONY : src/read_file.c.o
+
+src/read_file.i: src/read_file.c.i
+
+.PHONY : src/read_file.i
+
+# target to preprocess a source file
+src/read_file.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.i
+.PHONY : src/read_file.c.i
+
+src/read_file.s: src/read_file.c.s
+
+.PHONY : src/read_file.s
+
+# target to generate assembly for a file
+src/read_file.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.s
+.PHONY : src/read_file.c.s
+
+src/zoom.o: src/zoom.c.o
+
+.PHONY : src/zoom.o
+
+# target to build an object file
+src/zoom.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/zoom.c.o
+.PHONY : src/zoom.c.o
+
+src/zoom.i: src/zoom.c.i
+
+.PHONY : src/zoom.i
+
+# target to preprocess a source file
+src/zoom.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/zoom.c.i
+.PHONY : src/zoom.c.i
+
+src/zoom.s: src/zoom.c.s
+
+.PHONY : src/zoom.s
+
+# target to generate assembly for a file
+src/zoom.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/zoom.c.s
+.PHONY : src/zoom.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2682,6 +2736,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/read_file.o"
+	@echo "... src/read_file.i"
+	@echo "... src/read_file.s"
+	@echo "... src/zoom.o"
+	@echo "... src/zoom.i"
+	@echo "... src/zoom.s"
 .PHONY : help
 
 

@@ -264,5 +264,23 @@ CMakeFiles/FdF.dir/src/main.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/main.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/FdF.dir/src/main.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/FdF.dir/src/main.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/main.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/main.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/FdF.dir/src/main.c.o: ../src/main.c
+
+CMakeFiles/FdF.dir/src/read_file.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/read_file.c.o: ../src/read_file.c
+
+CMakeFiles/FdF.dir/src/zoom.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/zoom.c.o: ../src/zoom.c
 

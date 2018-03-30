@@ -84,6 +84,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FdF.dir/lib/ft_tolower.c.o"
   "CMakeFiles/FdF.dir/lib/ft_toupper.c.o"
   "CMakeFiles/FdF.dir/src/main.c.o"
+  "CMakeFiles/FdF.dir/src/read_file.c.o"
+  "CMakeFiles/FdF.dir/src/zoom.c.o"
   "FdF.pdb"
   "FdF"
 )
