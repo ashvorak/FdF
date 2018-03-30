@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:03:38 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 13:40:09 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/30 16:22:23 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static	void	put_pixel(int x, int y, t_proj *gen, int color)
 {
 	int i;
 
-	if (x >= gen->size_line / 4 || x < 0 || y < 0)
+	if (x >= gen->size_line / 4 || x < 0 || y < 0 || y > 1000)
 		return ;
 	i = (x + (y * (gen->size_line / 4)));
 	color = 1;

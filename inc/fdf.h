@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 15:16:39 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/30 17:37:53 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,6 @@ void	modification(t_proj *proj, double dx, double dy, double dz);
 void	display(t_proj *proj);
 void	line(t_proj *gen, t_coor t1, t_coor t2);
 int		move(int key, t_proj *proj);
+void	rotation(t_proj *proj, int key);
 
 #endif
