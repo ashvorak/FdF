@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read_file.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/30 15:27:58 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/03/30 15:28:00 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/fdf.h"
 
 static void	make_list(t_proj *proj, char *buf)
@@ -39,10 +51,10 @@ static void	scaling(t_proj *proj)
 
 static	void	centering(t_proj *proj)
 {
-	int x;
-	int y;
-	double dx;
-	double dy;
+	int		x;
+	int		y;
+	double	dx;
+	double	dy;
 
 	y = 0;
 	dx = WIN_X / 2 - proj->list[0][proj->width - 1].x / 2;

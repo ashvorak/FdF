@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 13:37:32 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/03/30 14:56:48 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ int	main(int argc, char **argv)
 	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "test");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
 	display(proj);
+	mlx_hook(proj->win_ptr, 2, 5, move, proj);
 	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);
 	mlx_loop(proj->mlx_ptr);
 	return (0);

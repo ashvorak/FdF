@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zoom.c                                             :+:      :+:    :+:   */
+/*   modification.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/30 15:16:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 15:16:41 by oshvorak         ###   ########.fr       */
+/*   Created: 2018/03/30 15:17:45 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/03/30 15:17:46 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-void zoom(t_proj *proj, double scale)
+void modification(t_proj *proj, double dx, double dy, double dz)
 {
 	int x;
 	int y;
@@ -23,9 +23,9 @@ void zoom(t_proj *proj, double scale)
 		x = 0;
 		while (x < proj->width)
 		{
-			proj->list[y][x].x *= scale;
-			proj->list[y][x].y *= scale;
-			proj->list[y][x].z *= scale;
+			proj->list[y][x].x += dx;
+			proj->list[y][x].y += dy;
+			proj->list[y][x].z += dz;
 			x++;
 		}
 		y++;
