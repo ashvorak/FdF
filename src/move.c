@@ -60,6 +60,8 @@ int move(int key, t_proj *proj)
 		move_simply(proj, key);
 	else if (key == 6 || key == 7 || key == 16)
 		rotation(proj, key);
+	else if (key == 53)
+		exit(1);
 	mlx_clear_window(proj->mlx_ptr, proj->win_ptr);
 	ft_bzero(proj->pixels, WIN_X * WIN_Y * 4);
 	proj->size_line = 0;

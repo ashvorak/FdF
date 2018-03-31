@@ -366,6 +366,9 @@
 		<Unit filename="/Users/oshvorak/FdF/src/read_file.c">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/ret_color.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/rotation.c">
 			<Option target="FdF"/>
 		</Unit>

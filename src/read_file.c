@@ -17,6 +17,7 @@ static void	make_list(t_proj *proj, char *buf)
 	int		x;
 	int		y;
 	char	**arr;
+	char 	*tmp;
 
 	y = 0;
 	arr = ft_strsplit(buf, ' ');
@@ -30,6 +31,12 @@ static void	make_list(t_proj *proj, char *buf)
 			proj->list[y][x].x = x;
 			proj->list[y][x].y = y;
 			proj->list[y][x].z = ft_atoi(*arr);
+			if (ft_strstr(*arr, ","))
+			{
+				tmp = ft_strchr(*arr, ',');
+				tmp++;
+				proj->list[y][x].color = ret_color(tmp);
+			}
 			x++;
 			arr++;
 		}

@@ -57,5 +57,6 @@ void	display(t_proj *proj);
 void	line(t_proj *gen, t_coor t1, t_coor t2);
 int		move(int key, t_proj *proj);
 void	rotation(t_proj *proj, int key);
+int		ret_color(char *color);
 
 #endif

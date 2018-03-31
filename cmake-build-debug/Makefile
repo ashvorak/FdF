@@ -2553,6 +2553,33 @@ src/read_file.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.s
 .PHONY : src/read_file.c.s
 
+src/ret_color.o: src/ret_color.c.o
+
+.PHONY : src/ret_color.o
+
+# target to build an object file
+src/ret_color.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.o
+.PHONY : src/ret_color.c.o
+
+src/ret_color.i: src/ret_color.c.i
+
+.PHONY : src/ret_color.i
+
+# target to preprocess a source file
+src/ret_color.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.i
+.PHONY : src/ret_color.c.i
+
+src/ret_color.s: src/ret_color.c.s
+
+.PHONY : src/ret_color.s
+
+# target to generate assembly for a file
+src/ret_color.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.s
+.PHONY : src/ret_color.c.s
+
 src/rotation.o: src/rotation.c.o
 
 .PHONY : src/rotation.o
@@ -2886,6 +2913,9 @@ help:
 	@echo "... src/read_file.o"
 	@echo "... src/read_file.i"
 	@echo "... src/read_file.s"
+	@echo "... src/ret_color.o"
+	@echo "... src/ret_color.i"
+	@echo "... src/ret_color.s"
 	@echo "... src/rotation.o"
 	@echo "... src/rotation.i"
 	@echo "... src/rotation.s"

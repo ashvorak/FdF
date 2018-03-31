@@ -94,6 +94,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/FdF/src/modification.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/modification.c.o"
   "/Users/oshvorak/FdF/src/move.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/move.c.o"
   "/Users/oshvorak/FdF/src/read_file.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/read_file.c.o"
+  "/Users/oshvorak/FdF/src/ret_color.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/ret_color.c.o"
   "/Users/oshvorak/FdF/src/rotation.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/rotation.c.o"
   "/Users/oshvorak/FdF/src/zoom.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/zoom.c.o"
   )

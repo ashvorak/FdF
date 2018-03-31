@@ -19,8 +19,10 @@ static	void	put_pixel(int x, int y, t_proj *gen, int color)
 	if (x >= gen->size_line / 4 || x < 0 || y < 0 || y >= 1000)
 		return ;
 	i = (x + (y * (gen->size_line / 4)));
-	color = 1;
-	gen->pixels[i] = 16657966;
+	if (color)
+		gen->pixels[i] = color;
+	else
+		gen->pixels[i] = 16657966;
 }
 
 static	int		ft_incline(t_coor t1, t_coor t2)

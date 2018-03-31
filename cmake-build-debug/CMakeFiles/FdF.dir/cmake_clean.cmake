@@ -91,6 +91,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FdF.dir/src/read_file.c.o"
   "CMakeFiles/FdF.dir/src/rotation.c.o"
   "CMakeFiles/FdF.dir/src/zoom.c.o"
+  "CMakeFiles/FdF.dir/src/ret_color.c.o"
   "FdF.pdb"
   "FdF"
 )
