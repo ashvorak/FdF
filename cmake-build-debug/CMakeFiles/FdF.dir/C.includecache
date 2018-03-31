@@ -15,6 +15,8 @@ stdlib.h
 -
 errno.h
 -
+math.h
+-
 ../lib/libft.h
 /Users/oshvorak/FdF/lib/libft.h
 ../lib/get_next_line/get_next_line.h
@@ -366,11 +368,31 @@ string.h
 
 /Users/oshvorak/FdF/minilibx_macos/mlx.h
 
+/Users/oshvorak/FdF/src/display.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/line.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
 /Users/oshvorak/FdF/src/main.c
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h
 
+/Users/oshvorak/FdF/src/modification.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/move.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
 /Users/oshvorak/FdF/src/read_file.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/rotation.c
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h
 

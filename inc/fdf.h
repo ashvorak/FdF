@@ -26,7 +26,7 @@
 
 #define WIN_X 1500
 #define	WIN_Y 1000
-#define SCALE 50
+#define SCALE 30
 
 typedef struct	s_coor
 {

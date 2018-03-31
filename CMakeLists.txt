@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
 project(FdF)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wextra")
+include_directories(libft minilibx_macos) # header directories
+link_directories(libft minilibx_macos) # library directories
 
 add_executable(FdF
         inc/fdf.h
@@ -92,4 +94,13 @@ add_executable(FdF
         lib/ft_tolower.c
         lib/ft_toupper.c
         lib/libft.h
-        src/main.c src/read_file.c src/zoom.c)
+        src/display.c
+        src/line.c
+        src/main.c
+        src/modification.c
+        src/move.c
+        src/read_file.c
+        src/rotation.c
+        src/zoom.c)
+
+target_link_libraries(FdF -lmlx "-framework OpenGL" "-framework AppKit")

@@ -56,19 +56,10 @@ void	move_simply(t_proj *proj, int key)
 
 int move(int key, t_proj *proj)
 {
-	double dx;
-	double dy;
-
-	dx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
-	dy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
 	if (key >= 69)
 		move_simply(proj, key);
-	else
-	{
-		centering(proj, -dx, -dy);
+	else if (key == 6 || key == 7 || key == 16)
 		rotation(proj, key);
-		centering(proj, dx, dy);
-	}
 	mlx_clear_window(proj->mlx_ptr, proj->win_ptr);
 	ft_bzero(proj->pixels, WIN_X * WIN_Y * 4);
 	proj->size_line = 0;

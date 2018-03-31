@@ -2391,6 +2391,60 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/display.o: src/display.c.o
+
+.PHONY : src/display.o
+
+# target to build an object file
+src/display.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/display.c.o
+.PHONY : src/display.c.o
+
+src/display.i: src/display.c.i
+
+.PHONY : src/display.i
+
+# target to preprocess a source file
+src/display.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/display.c.i
+.PHONY : src/display.c.i
+
+src/display.s: src/display.c.s
+
+.PHONY : src/display.s
+
+# target to generate assembly for a file
+src/display.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/display.c.s
+.PHONY : src/display.c.s
+
+src/line.o: src/line.c.o
+
+.PHONY : src/line.o
+
+# target to build an object file
+src/line.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/line.c.o
+.PHONY : src/line.c.o
+
+src/line.i: src/line.c.i
+
+.PHONY : src/line.i
+
+# target to preprocess a source file
+src/line.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/line.c.i
+.PHONY : src/line.c.i
+
+src/line.s: src/line.c.s
+
+.PHONY : src/line.s
+
+# target to generate assembly for a file
+src/line.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/line.c.s
+.PHONY : src/line.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2418,6 +2472,60 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/modification.o: src/modification.c.o
+
+.PHONY : src/modification.o
+
+# target to build an object file
+src/modification.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/modification.c.o
+.PHONY : src/modification.c.o
+
+src/modification.i: src/modification.c.i
+
+.PHONY : src/modification.i
+
+# target to preprocess a source file
+src/modification.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/modification.c.i
+.PHONY : src/modification.c.i
+
+src/modification.s: src/modification.c.s
+
+.PHONY : src/modification.s
+
+# target to generate assembly for a file
+src/modification.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/modification.c.s
+.PHONY : src/modification.c.s
+
+src/move.o: src/move.c.o
+
+.PHONY : src/move.o
+
+# target to build an object file
+src/move.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/move.c.o
+.PHONY : src/move.c.o
+
+src/move.i: src/move.c.i
+
+.PHONY : src/move.i
+
+# target to preprocess a source file
+src/move.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/move.c.i
+.PHONY : src/move.c.i
+
+src/move.s: src/move.c.s
+
+.PHONY : src/move.s
+
+# target to generate assembly for a file
+src/move.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/move.c.s
+.PHONY : src/move.c.s
+
 src/read_file.o: src/read_file.c.o
 
 .PHONY : src/read_file.o
@@ -2444,6 +2552,33 @@ src/read_file.s: src/read_file.c.s
 src/read_file.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.s
 .PHONY : src/read_file.c.s
+
+src/rotation.o: src/rotation.c.o
+
+.PHONY : src/rotation.o
+
+# target to build an object file
+src/rotation.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/rotation.c.o
+.PHONY : src/rotation.c.o
+
+src/rotation.i: src/rotation.c.i
+
+.PHONY : src/rotation.i
+
+# target to preprocess a source file
+src/rotation.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/rotation.c.i
+.PHONY : src/rotation.c.i
+
+src/rotation.s: src/rotation.c.s
+
+.PHONY : src/rotation.s
+
+# target to generate assembly for a file
+src/rotation.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/rotation.c.s
+.PHONY : src/rotation.c.s
 
 src/zoom.o: src/zoom.c.o
 
@@ -2733,12 +2868,27 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/display.o"
+	@echo "... src/display.i"
+	@echo "... src/display.s"
+	@echo "... src/line.o"
+	@echo "... src/line.i"
+	@echo "... src/line.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/modification.o"
+	@echo "... src/modification.i"
+	@echo "... src/modification.s"
+	@echo "... src/move.o"
+	@echo "... src/move.i"
+	@echo "... src/move.s"
 	@echo "... src/read_file.o"
 	@echo "... src/read_file.i"
 	@echo "... src/read_file.s"
+	@echo "... src/rotation.o"
+	@echo "... src/rotation.i"
+	@echo "... src/rotation.s"
 	@echo "... src/zoom.o"
 	@echo "... src/zoom.i"
 	@echo "... src/zoom.s"

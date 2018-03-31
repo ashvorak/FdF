@@ -32,6 +32,7 @@ t_proj *new_proj()
 
 int exit_x()
 {
+	system("leaks fdf");
 	exit(0);
 }
 
@@ -58,11 +59,12 @@ int	main(int argc, char **argv)
 		i++;
 	}
 	proj->mlx_ptr = mlx_init();
-	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "test");
+	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "FdF");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
 	display(proj);
 	mlx_hook(proj->win_ptr, 2, 5, move, proj);
 	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);
 	mlx_loop(proj->mlx_ptr);
+	system("leaks fdf");
 	return (0);
 }

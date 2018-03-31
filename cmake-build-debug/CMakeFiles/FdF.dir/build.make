@@ -2073,9 +2073,57 @@ CMakeFiles/FdF.dir/lib/ft_toupper.c.o.provides: CMakeFiles/FdF.dir/lib/ft_touppe
 CMakeFiles/FdF.dir/lib/ft_toupper.c.o.provides.build: CMakeFiles/FdF.dir/lib/ft_toupper.c.o
 
 
+CMakeFiles/FdF.dir/src/display.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/display.c.o: ../src/display.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/FdF.dir/src/display.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/display.c.o   -c /Users/oshvorak/FdF/src/display.c
+
+CMakeFiles/FdF.dir/src/display.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/display.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/display.c > CMakeFiles/FdF.dir/src/display.c.i
+
+CMakeFiles/FdF.dir/src/display.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/display.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/display.c -o CMakeFiles/FdF.dir/src/display.c.s
+
+CMakeFiles/FdF.dir/src/display.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/display.c.o.requires
+
+CMakeFiles/FdF.dir/src/display.c.o.provides: CMakeFiles/FdF.dir/src/display.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/display.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/display.c.o.provides
+
+CMakeFiles/FdF.dir/src/display.c.o.provides.build: CMakeFiles/FdF.dir/src/display.c.o
+
+
+CMakeFiles/FdF.dir/src/line.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/line.c.o: ../src/line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/FdF.dir/src/line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/line.c.o   -c /Users/oshvorak/FdF/src/line.c
+
+CMakeFiles/FdF.dir/src/line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/line.c > CMakeFiles/FdF.dir/src/line.c.i
+
+CMakeFiles/FdF.dir/src/line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/line.c -o CMakeFiles/FdF.dir/src/line.c.s
+
+CMakeFiles/FdF.dir/src/line.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/line.c.o.requires
+
+CMakeFiles/FdF.dir/src/line.c.o.provides: CMakeFiles/FdF.dir/src/line.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/line.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/line.c.o.provides
+
+CMakeFiles/FdF.dir/src/line.c.o.provides.build: CMakeFiles/FdF.dir/src/line.c.o
+
+
 CMakeFiles/FdF.dir/src/main.c.o: CMakeFiles/FdF.dir/flags.make
 CMakeFiles/FdF.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/FdF.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/FdF.dir/src/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/main.c.o   -c /Users/oshvorak/FdF/src/main.c
 
 CMakeFiles/FdF.dir/src/main.c.i: cmake_force
@@ -2097,9 +2145,57 @@ CMakeFiles/FdF.dir/src/main.c.o.provides: CMakeFiles/FdF.dir/src/main.c.o.requir
 CMakeFiles/FdF.dir/src/main.c.o.provides.build: CMakeFiles/FdF.dir/src/main.c.o
 
 
+CMakeFiles/FdF.dir/src/modification.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/modification.c.o: ../src/modification.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/FdF.dir/src/modification.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/modification.c.o   -c /Users/oshvorak/FdF/src/modification.c
+
+CMakeFiles/FdF.dir/src/modification.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/modification.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/modification.c > CMakeFiles/FdF.dir/src/modification.c.i
+
+CMakeFiles/FdF.dir/src/modification.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/modification.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/modification.c -o CMakeFiles/FdF.dir/src/modification.c.s
+
+CMakeFiles/FdF.dir/src/modification.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/modification.c.o.requires
+
+CMakeFiles/FdF.dir/src/modification.c.o.provides: CMakeFiles/FdF.dir/src/modification.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/modification.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/modification.c.o.provides
+
+CMakeFiles/FdF.dir/src/modification.c.o.provides.build: CMakeFiles/FdF.dir/src/modification.c.o
+
+
+CMakeFiles/FdF.dir/src/move.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/move.c.o: ../src/move.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/FdF.dir/src/move.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/move.c.o   -c /Users/oshvorak/FdF/src/move.c
+
+CMakeFiles/FdF.dir/src/move.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/move.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/move.c > CMakeFiles/FdF.dir/src/move.c.i
+
+CMakeFiles/FdF.dir/src/move.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/move.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/move.c -o CMakeFiles/FdF.dir/src/move.c.s
+
+CMakeFiles/FdF.dir/src/move.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/move.c.o.requires
+
+CMakeFiles/FdF.dir/src/move.c.o.provides: CMakeFiles/FdF.dir/src/move.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/move.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/move.c.o.provides
+
+CMakeFiles/FdF.dir/src/move.c.o.provides.build: CMakeFiles/FdF.dir/src/move.c.o
+
+
 CMakeFiles/FdF.dir/src/read_file.c.o: CMakeFiles/FdF.dir/flags.make
 CMakeFiles/FdF.dir/src/read_file.c.o: ../src/read_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/FdF.dir/src/read_file.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/FdF.dir/src/read_file.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/read_file.c.o   -c /Users/oshvorak/FdF/src/read_file.c
 
 CMakeFiles/FdF.dir/src/read_file.c.i: cmake_force
@@ -2121,9 +2217,33 @@ CMakeFiles/FdF.dir/src/read_file.c.o.provides: CMakeFiles/FdF.dir/src/read_file.
 CMakeFiles/FdF.dir/src/read_file.c.o.provides.build: CMakeFiles/FdF.dir/src/read_file.c.o
 
 
+CMakeFiles/FdF.dir/src/rotation.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/rotation.c.o: ../src/rotation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/FdF.dir/src/rotation.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/rotation.c.o   -c /Users/oshvorak/FdF/src/rotation.c
+
+CMakeFiles/FdF.dir/src/rotation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/rotation.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/rotation.c > CMakeFiles/FdF.dir/src/rotation.c.i
+
+CMakeFiles/FdF.dir/src/rotation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/rotation.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/rotation.c -o CMakeFiles/FdF.dir/src/rotation.c.s
+
+CMakeFiles/FdF.dir/src/rotation.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/rotation.c.o.requires
+
+CMakeFiles/FdF.dir/src/rotation.c.o.provides: CMakeFiles/FdF.dir/src/rotation.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/rotation.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/rotation.c.o.provides
+
+CMakeFiles/FdF.dir/src/rotation.c.o.provides.build: CMakeFiles/FdF.dir/src/rotation.c.o
+
+
 CMakeFiles/FdF.dir/src/zoom.c.o: CMakeFiles/FdF.dir/flags.make
 CMakeFiles/FdF.dir/src/zoom.c.o: ../src/zoom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/FdF.dir/src/zoom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/FdF.dir/src/zoom.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/zoom.c.o   -c /Users/oshvorak/FdF/src/zoom.c
 
 CMakeFiles/FdF.dir/src/zoom.c.i: cmake_force
@@ -2231,8 +2351,13 @@ FdF_OBJECTS = \
 "CMakeFiles/FdF.dir/lib/ft_swap.c.o" \
 "CMakeFiles/FdF.dir/lib/ft_tolower.c.o" \
 "CMakeFiles/FdF.dir/lib/ft_toupper.c.o" \
+"CMakeFiles/FdF.dir/src/display.c.o" \
+"CMakeFiles/FdF.dir/src/line.c.o" \
 "CMakeFiles/FdF.dir/src/main.c.o" \
+"CMakeFiles/FdF.dir/src/modification.c.o" \
+"CMakeFiles/FdF.dir/src/move.c.o" \
 "CMakeFiles/FdF.dir/src/read_file.c.o" \
+"CMakeFiles/FdF.dir/src/rotation.c.o" \
 "CMakeFiles/FdF.dir/src/zoom.c.o"
 
 # External object files for target FdF
@@ -2322,12 +2447,17 @@ FdF: CMakeFiles/FdF.dir/lib/ft_strtrim.c.o
 FdF: CMakeFiles/FdF.dir/lib/ft_swap.c.o
 FdF: CMakeFiles/FdF.dir/lib/ft_tolower.c.o
 FdF: CMakeFiles/FdF.dir/lib/ft_toupper.c.o
+FdF: CMakeFiles/FdF.dir/src/display.c.o
+FdF: CMakeFiles/FdF.dir/src/line.c.o
 FdF: CMakeFiles/FdF.dir/src/main.c.o
+FdF: CMakeFiles/FdF.dir/src/modification.c.o
+FdF: CMakeFiles/FdF.dir/src/move.c.o
 FdF: CMakeFiles/FdF.dir/src/read_file.c.o
+FdF: CMakeFiles/FdF.dir/src/rotation.c.o
 FdF: CMakeFiles/FdF.dir/src/zoom.c.o
 FdF: CMakeFiles/FdF.dir/build.make
 FdF: CMakeFiles/FdF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable FdF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Linking C executable FdF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FdF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2419,8 +2549,13 @@ CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/lib/ft_strtrim.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/lib/ft_swap.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/lib/ft_tolower.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/lib/ft_toupper.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/display.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/line.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/main.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/modification.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/move.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/read_file.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/rotation.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/zoom.c.o.requires
 
 .PHONY : CMakeFiles/FdF.dir/requires

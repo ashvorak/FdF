@@ -260,6 +260,22 @@ CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o
  /Users/oshvorak/FdF/lib/get_next_line/get_next_line.c
  /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
  /Users/oshvorak/FdF/lib/libft.h
+CMakeFiles/FdF.dir/src/display.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/display.c
+CMakeFiles/FdF.dir/src/line.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/line.c
 CMakeFiles/FdF.dir/src/main.c.o
  /Users/oshvorak/FdF/inc/fdf.h
  /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
@@ -268,6 +284,22 @@ CMakeFiles/FdF.dir/src/main.c.o
  /Users/oshvorak/FdF/minilibx/mlx.h
  /Users/oshvorak/FdF/minilibx_macos/mlx.h
  /Users/oshvorak/FdF/src/main.c
+CMakeFiles/FdF.dir/src/modification.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/modification.c
+CMakeFiles/FdF.dir/src/move.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/move.c
 CMakeFiles/FdF.dir/src/read_file.c.o
  /Users/oshvorak/FdF/inc/fdf.h
  /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
@@ -276,6 +308,14 @@ CMakeFiles/FdF.dir/src/read_file.c.o
  /Users/oshvorak/FdF/minilibx/mlx.h
  /Users/oshvorak/FdF/minilibx_macos/mlx.h
  /Users/oshvorak/FdF/src/read_file.c
+CMakeFiles/FdF.dir/src/rotation.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/rotation.c
 CMakeFiles/FdF.dir/src/zoom.c.o
  /Users/oshvorak/FdF/inc/fdf.h
  /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h

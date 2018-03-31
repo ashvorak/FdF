@@ -260,6 +260,22 @@ CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get
 CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/libft.h
 
+CMakeFiles/FdF.dir/src/display.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/display.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/display.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/display.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/display.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/display.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/display.c.o: ../src/display.c
+
+CMakeFiles/FdF.dir/src/line.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/line.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/line.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/line.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/line.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/line.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/line.c.o: ../src/line.c
+
 CMakeFiles/FdF.dir/src/main.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/main.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/FdF.dir/src/main.c.o: ../lib/get_next_line/get_next_line.h
@@ -268,6 +284,22 @@ CMakeFiles/FdF.dir/src/main.c.o: ../minilibx/mlx.h
 CMakeFiles/FdF.dir/src/main.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/FdF.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/FdF.dir/src/modification.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/modification.c.o: ../src/modification.c
+
+CMakeFiles/FdF.dir/src/move.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/move.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/move.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/move.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/move.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/move.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/move.c.o: ../src/move.c
+
 CMakeFiles/FdF.dir/src/read_file.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/get_next_line/get_next_line.h
@@ -275,6 +307,14 @@ CMakeFiles/FdF.dir/src/read_file.c.o: ../lib/libft.h
 CMakeFiles/FdF.dir/src/read_file.c.o: ../minilibx/mlx.h
 CMakeFiles/FdF.dir/src/read_file.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/FdF.dir/src/read_file.c.o: ../src/read_file.c
+
+CMakeFiles/FdF.dir/src/rotation.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/rotation.c.o: ../src/rotation.c
 
 CMakeFiles/FdF.dir/src/zoom.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/zoom.c.o: ../lib/ft_printf/inc/ft_printf.h

@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/oshvorak/FdF/libft"/>
+					<Add directory="/Users/oshvorak/FdF/minilibx_macos"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -65,6 +67,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/oshvorak/FdF/libft"/>
+					<Add directory="/Users/oshvorak/FdF/minilibx_macos"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -344,10 +348,25 @@
 		<Unit filename="/Users/oshvorak/FdF/lib/libft.h">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/display.c">
+			<Option target="FdF"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/line.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/main.c">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/modification.c">
+			<Option target="FdF"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/move.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/read_file.c">
+			<Option target="FdF"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/rotation.c">
 			<Option target="FdF"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/zoom.c">
