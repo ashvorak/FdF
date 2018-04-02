@@ -6,19 +6,31 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 15:27:58 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 15:28:00 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/02 15:03:19 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
+static void free_arr(char **arr)
+{
+	int i;
+
+	i = 0;
+	while (arr[i])
+		free(arr[i++]);
+	free(arr);
+}
+
 static void	make_list(t_proj *proj, char *buf)
 {
+	int		i;
 	int		x;
 	int		y;
 	char	**arr;
 	char 	*tmp;
 
+	i = 0;
 	y = 0;
 	arr = ft_strsplit(buf, ' ');
 	proj->list = (t_coor**)malloc(sizeof(t_coor*) * proj->width * proj->height);
@@ -30,17 +42,20 @@ static void	make_list(t_proj *proj, char *buf)
 		{
 			proj->list[y][x].x = x;
 			proj->list[y][x].y = y;
-			proj->list[y][x].z = ft_atoi(*arr);
+			proj->list[y][x].z = ft_atoi(arr[i]);
 			if (ft_strstr(*arr, ","))
 			{
-				tmp = ft_strchr(*arr, ',');
+				tmp = ft_strchr(arr[i], ',');
 				proj->list[y][x].color = ft_atoi_base(&tmp[3], 16);
 			}
+			else
+				proj->list[y][x].color = 0;
 			x++;
-			arr++;
+			i++;
 		}
 		y++;
 	}
+	free_arr(arr);
 }
 
 static void	scaling(t_proj *proj)
@@ -80,28 +95,41 @@ static	void	centering(t_proj *proj)
 
 void	read_file(int fd, t_proj *proj)
 {
+	int		i;
+	char	*tmp;
 	char 	*buf;
 	char	*line;
 	char 	**arr;
 
+	i = 0;
 	get_next_line(fd, &line);
 	buf = ft_strdup(line);
-	//ft_strdel(&line);
+	ft_strdel(&line);//???
 	arr = ft_strsplit(buf, ' ');
 	proj->width = 0;
-	while (*(arr++))
+	while (arr[i++])
 		proj->width++;
-	buf = ft_strjoin(buf, " ");
+	free_arr(arr);
+	tmp = ft_strdup(buf);
+	ft_strdel(&buf);
+	buf = ft_strjoin(tmp, " ");
+	ft_strdel(&tmp);
 	proj->height = 1;
 	while (get_next_line(fd, &line))
 	{
-		buf = ft_strjoin(buf, line);
-		buf = ft_strjoin(buf, " ");
-		//ft_strdel(&line);
+		tmp = ft_strdup(buf);
+		ft_strdel(&buf);
+		buf = ft_strjoin(tmp, line);
+		ft_strdel(&tmp);
+		tmp = ft_strdup(buf);
+		ft_strdel(&buf);
+		buf = ft_strjoin(tmp, " ");
+		ft_strdel(&tmp);
+		ft_strdel(&line);
 		proj->height++;
 	}
 	make_list(proj, buf);
 	scaling(proj);
 	centering(proj);
+	ft_strdel(&buf);
 }
-

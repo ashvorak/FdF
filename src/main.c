@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 14:56:48 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/02 13:39:32 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,28 +36,27 @@ int exit_x()
 	exit(0);
 }
 
+void free_proj(t_proj *proj)
+{
+	int i;
+
+	i = 0;
+	while (i < proj->height)
+	{
+		free(proj->list[i]);
+		i++;
+	}
+	free(proj->list);
+}
+
 int	main(int argc, char **argv)
 {
-	int		i;
-	int		j;
 	int		fd;
 	t_proj	*proj;
 
-	i = 0;
 	proj = new_proj();
 	(argc == 2) ? fd = open(argv[1], O_RDONLY) : exit(1);
 	read_file(fd, proj);
-	while (i < proj->height)
-	{
-		j = 0;
-		while (j < proj->width)
-		{
-			printf("(%.0f, %.0f, %.0f)", proj->list[i][j].x, proj->list[i][j].y, proj->list[i][j].z);
-			j++;
-		}
-		printf("\n");
-		i++;
-	}
 	proj->mlx_ptr = mlx_init();
 	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "FdF");
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
@@ -65,6 +64,7 @@ int	main(int argc, char **argv)
 	mlx_hook(proj->win_ptr, 2, 5, move, proj);
 	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);
 	mlx_loop(proj->mlx_ptr);
+	free_proj(proj);
 	system("leaks fdf");
 	return (0);
 }
