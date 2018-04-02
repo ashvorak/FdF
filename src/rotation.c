@@ -103,7 +103,9 @@ void	rotation(t_proj *proj, int key)
 	//dx = proj->list[0][0].x;//(proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
 	//dy = proj->list[0][0].y;//(proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
 	dx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
+	dx += dx - proj->list[0][(proj->width - 1) / 2].x;
 	dy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
+	//dy -= dy - proj->list[(proj->height - 1) / 2][0].x;
 	angle = 5 * M_PI / 180;
 	centering(proj, -dx, -dy);
 	if (key == 6)
