@@ -110,7 +110,8 @@ LIBFT = ./lib/ft_atoi.c \
 		./lib/ft_strcapitalize.c \
 		./lib/ft_factorial.c \
 		./lib/ft_listsize.c \
-		./lib/ft_charreplace.c
+		./lib/ft_charreplace.c \
+		./lib/ft_atoi_base.c
 
 INC = ./inc
 

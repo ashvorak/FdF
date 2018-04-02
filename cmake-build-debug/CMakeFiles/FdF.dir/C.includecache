@@ -32,6 +32,10 @@ math.h
 libft.h
 /Users/oshvorak/FdF/lib/libft.h
 
+/Users/oshvorak/FdF/lib/ft_atoi_base.c
+libft.h
+/Users/oshvorak/FdF/lib/libft.h
+
 /Users/oshvorak/FdF/lib/ft_bzero.c
 libft.h
 /Users/oshvorak/FdF/lib/libft.h

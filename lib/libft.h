@@ -91,5 +91,6 @@ int					ft_sqrt(int nb);
 void				ft_charreplace(char *s, char c, char x);
 char				*ft_strcapitalize(char *str);
 int					ft_listsize(t_list *begin_list);
+int					ft_atoi_base(const char *str, int base);
 
 #endif

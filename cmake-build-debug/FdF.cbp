@@ -90,6 +90,9 @@
 		<Unit filename="/Users/oshvorak/FdF/lib/ft_atoi.c">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/lib/ft_atoi_base.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/lib/ft_bzero.c">
 			<Option target="FdF"/>
 		</Unit>
@@ -364,9 +367,6 @@
 			<Option target="FdF"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/read_file.c">
-			<Option target="FdF"/>
-		</Unit>
-		<Unit filename="/Users/oshvorak/FdF/src/ret_color.c">
 			<Option target="FdF"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/rotation.c">

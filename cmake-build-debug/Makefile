@@ -150,6 +150,33 @@ lib/ft_atoi.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/ft_atoi.c.s
 .PHONY : lib/ft_atoi.c.s
 
+lib/ft_atoi_base.o: lib/ft_atoi_base.c.o
+
+.PHONY : lib/ft_atoi_base.o
+
+# target to build an object file
+lib/ft_atoi_base.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o
+.PHONY : lib/ft_atoi_base.c.o
+
+lib/ft_atoi_base.i: lib/ft_atoi_base.c.i
+
+.PHONY : lib/ft_atoi_base.i
+
+# target to preprocess a source file
+lib/ft_atoi_base.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/ft_atoi_base.c.i
+.PHONY : lib/ft_atoi_base.c.i
+
+lib/ft_atoi_base.s: lib/ft_atoi_base.c.s
+
+.PHONY : lib/ft_atoi_base.s
+
+# target to generate assembly for a file
+lib/ft_atoi_base.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/ft_atoi_base.c.s
+.PHONY : lib/ft_atoi_base.c.s
+
 lib/ft_bzero.o: lib/ft_bzero.c.o
 
 .PHONY : lib/ft_bzero.o
@@ -2553,33 +2580,6 @@ src/read_file.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/read_file.c.s
 .PHONY : src/read_file.c.s
 
-src/ret_color.o: src/ret_color.c.o
-
-.PHONY : src/ret_color.o
-
-# target to build an object file
-src/ret_color.c.o:
-	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.o
-.PHONY : src/ret_color.c.o
-
-src/ret_color.i: src/ret_color.c.i
-
-.PHONY : src/ret_color.i
-
-# target to preprocess a source file
-src/ret_color.c.i:
-	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.i
-.PHONY : src/ret_color.c.i
-
-src/ret_color.s: src/ret_color.c.s
-
-.PHONY : src/ret_color.s
-
-# target to generate assembly for a file
-src/ret_color.c.s:
-	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/ret_color.c.s
-.PHONY : src/ret_color.c.s
-
 src/rotation.o: src/rotation.c.o
 
 .PHONY : src/rotation.o
@@ -2646,6 +2646,9 @@ help:
 	@echo "... lib/ft_atoi.o"
 	@echo "... lib/ft_atoi.i"
 	@echo "... lib/ft_atoi.s"
+	@echo "... lib/ft_atoi_base.o"
+	@echo "... lib/ft_atoi_base.i"
+	@echo "... lib/ft_atoi_base.s"
 	@echo "... lib/ft_bzero.o"
 	@echo "... lib/ft_bzero.i"
 	@echo "... lib/ft_bzero.s"
@@ -2913,9 +2916,6 @@ help:
 	@echo "... src/read_file.o"
 	@echo "... src/read_file.i"
 	@echo "... src/read_file.s"
-	@echo "... src/ret_color.o"
-	@echo "... src/ret_color.i"
-	@echo "... src/ret_color.s"
 	@echo "... src/rotation.o"
 	@echo "... src/rotation.i"
 	@echo "... src/rotation.s"

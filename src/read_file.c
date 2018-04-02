@@ -34,8 +34,7 @@ static void	make_list(t_proj *proj, char *buf)
 			if (ft_strstr(*arr, ","))
 			{
 				tmp = ft_strchr(*arr, ',');
-				tmp++;
-				proj->list[y][x].color = ret_color(tmp);
+				proj->list[y][x].color = ft_atoi_base(&tmp[3], 16);
 			}
 			x++;
 			arr++;
