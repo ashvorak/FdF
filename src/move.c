@@ -6,30 +6,11 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 14:37:00 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 18:10:53 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/03 17:32:17 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
-
-static	void	centering(t_proj *proj, double dx, double dy)
-{
-	int x;
-	int y;
-
-	y = 0;
-	while (y < proj->height)
-	{
-		x = 0;
-		while (x < proj->width)
-		{
-			proj->list[y][x].x += dx;
-			proj->list[y][x].y += dy;
-			x++;
-		}
-		y++;
-	}
-}
 
 void	move_simply(t_proj *proj, int key)
 {
@@ -60,6 +41,8 @@ int move(int key, t_proj *proj)
 		move_simply(proj, key);
 	else if (key == 6 || key == 7 || key == 16)
 		rotation(proj, key);
+	else if (key == 15 || key == 5 || key == 11)
+		change_color(proj, key);
 	else if (key == 53)
 		exit(1);
 	mlx_clear_window(proj->mlx_ptr, proj->win_ptr);

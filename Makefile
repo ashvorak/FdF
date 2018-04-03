@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/23 15:12:57 by oshvorak          #+#    #+#              #
-#    Updated: 2018/03/30 17:39:27 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/04/03 17:30:56 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,9 @@ SRC = ./src/main.c \
 	./src/display.c \
 	./src/line.c \
 	./src/move.c \
-	./src/rotation.c
+	./src/rotation.c \
+	./src/centering.c \
+	./src/change_color.c
 
 GNL = ./lib/get_next_line/get_next_line.c
 

@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 15:27:58 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/02 15:03:19 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/03 15:45:40 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ static void	scaling(t_proj *proj)
 	zoom(proj, scale);
 }
 
-static	void	centering(t_proj *proj)
+static	void	center(t_proj *proj)
 {
 	int		x;
 	int		y;
@@ -130,6 +130,6 @@ void	read_file(int fd, t_proj *proj)
 	}
 	make_list(proj, buf);
 	scaling(proj);
-	centering(proj);
+	center(proj);
 	ft_strdel(&buf);
 }

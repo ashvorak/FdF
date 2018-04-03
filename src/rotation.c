@@ -6,30 +6,11 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 16:42:43 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 18:04:23 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/03 17:12:07 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
-
-static	void	centering(t_proj *proj, double dx, double dy)
-{
-	int x;
-	int y;
-
-	y = 0;
-	while (y < proj->height)
-	{
-		x = 0;
-		while (x < proj->width)
-		{
-			proj->list[y][x].x += dx;
-			proj->list[y][x].y += dy;
-			x++;
-		}
-		y++;
-	}
-}
 
 void	rotate_x(t_proj *proj, double angle)
 {
@@ -99,20 +80,19 @@ void	rotation(t_proj *proj, int key)
 	double angle;
 	double dx;
 	double dy;
+	double dxx;
+	double dyy;
 
-	//dx = proj->list[0][0].x;//(proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
-	//dy = proj->list[0][0].y;//(proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
 	dx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
-	dx += dx - proj->list[0][(proj->width - 1) / 2].x;
 	dy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
-	//dy -= dy - proj->list[(proj->height - 1) / 2][0].x;
 	angle = 5 * M_PI / 180;
-	centering(proj, -dx, -dy);
 	if (key == 6)
 		rotate_z(proj, angle);
 	else if (key == 7)
 		rotate_x(proj, angle);
 	else if (key == 16)
 		rotate_y(proj, angle);
-	centering(proj, dx, dy);
+	dxx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
+	dyy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
+	centering(proj, dx - dxx, dy - dyy);
 }
