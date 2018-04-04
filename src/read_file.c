@@ -6,13 +6,13 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 15:27:58 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/03 15:45:40 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 17:16:24 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-static void free_arr(char **arr)
+void		free_arr(char **arr)
 {
 	int i;
 
@@ -22,94 +22,44 @@ static void free_arr(char **arr)
 	free(arr);
 }
 
-static void	make_list(t_proj *proj, char *buf)
-{
-	int		i;
-	int		x;
-	int		y;
-	char	**arr;
-	char 	*tmp;
-
-	i = 0;
-	y = 0;
-	arr = ft_strsplit(buf, ' ');
-	proj->list = (t_coor**)malloc(sizeof(t_coor*) * proj->width * proj->height);
-	while (y < proj->height)
-	{
-		x = 0;
-		proj->list[y] = (t_coor*)malloc(sizeof(t_coor) * proj->width);
-		while (x < proj->width)
-		{
-			proj->list[y][x].x = x;
-			proj->list[y][x].y = y;
-			proj->list[y][x].z = ft_atoi(arr[i]);
-			if (ft_strstr(arr[i], ","))
-			{
-				tmp = ft_strchr(arr[i], ',');
-				proj->list[y][x].color = ft_atoi_base(&tmp[3], 16);
-			}
-			else
-				proj->list[y][x].color = 0;
-			x++;
-			i++;
-		}
-		y++;
-	}
-	free_arr(arr);
-}
-
 static void	scaling(t_proj *proj)
 {
 	double scale;
 
-	if (WIN_X - proj->list[0][proj->width - 1].x > WIN_Y - proj->list[proj->height - 1][0].y)
+	if (WIN_X - proj->list[0][proj->width - 1].x > \
+	WIN_Y - proj->list[proj->height - 1][0].y)
 		scale = WIN_X / proj->list[0][proj->width - 1].x;
 	else
 		scale = WIN_Y / proj->list[proj->height - 1][0].y;
 	scale = (scale / 100) * SCALE;
 	zoom(proj, scale);
+	centering(proj, WIN_X / 2 - (proj->list[0][proj->width - 1].x + \
+		proj->list[0][0].x) / 2, WIN_Y / 2 - \
+		(proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2);
 }
-/*
-static	void	center(t_proj *proj)
-{
-	int		x;
-	int		y;
-	double	dx;
-	double	dy;
 
-	y = 0;
-	dx = WIN_X / 2 - proj->list[0][proj->width - 1].x / 2;
-	dy = WIN_Y / 2 - proj->list[proj->height - 1][0].y / 2;
-	while (y < proj->height)
-	{
-		x = 0;
-		while (x < proj->width)
-		{
-			proj->list[y][x].x += dx;
-			proj->list[y][x].y += dy;
-			x++;
-		}
-		y++;
-	}
-}
-*/
-void	read_file(int fd, t_proj *proj)
+static void	check_width(char *line, int width)
 {
 	int		i;
-	char	*tmp;
-	char 	*buf;
-	char	*line;
-	char 	**arr;
+	char	**arr;
 
 	i = 0;
-	get_next_line(fd, &line);
-	buf = ft_strdup(line);
-	ft_strdel(&line);//???
-	arr = ft_strsplit(buf, ' ');
-	proj->width = 0;
-	while (arr[i++])
-		proj->width++;
+	arr = ft_strsplit(line, ' ');
+	while (arr[i])
+		i++;
+	if (i != width)
+	{
+		perror("Wrong field size");
+		exit(1);
+	}
 	free_arr(arr);
+}
+
+static char	*ret_buf(t_proj *proj, int fd, char *buf)
+{
+	char	*line;
+	char	*tmp;
+
 	tmp = ft_strdup(buf);
 	ft_strdel(&buf);
 	buf = ft_strjoin(tmp, " ");
@@ -119,6 +69,7 @@ void	read_file(int fd, t_proj *proj)
 	{
 		tmp = ft_strdup(buf);
 		ft_strdel(&buf);
+		check_width(line, proj->width);
 		buf = ft_strjoin(tmp, line);
 		ft_strdel(&tmp);
 		tmp = ft_strdup(buf);
@@ -128,13 +79,33 @@ void	read_file(int fd, t_proj *proj)
 		ft_strdel(&line);
 		proj->height++;
 	}
+	return (buf);
+}
+
+void		read_file(int fd, t_proj *proj)
+{
+	int		i;
+	char	*buf;
+	char	*line;
+	char	**arr;
+
+	i = 0;
+	if (get_next_line(fd, &line) == -1)
+	{
+		perror("No such file");
+		exit(1);
+	}
+	buf = ft_strdup(line);
+	ft_strdel(&line);
+	arr = ft_strsplit(buf, ' ');
+	proj->width = 0;
+	while (arr[i++])
+		proj->width++;
+	free_arr(arr);
+	buf = ret_buf(proj, fd, buf);
 	make_list(proj, buf);
-	//rotation(proj, 6, 10 * M_PI / 180);
-	//rotation(proj, 0, 5 * M_PI / 180);
-	rotation(proj, 13, 5 * M_PI / 180);
+	rotation(proj, 2, 10 * M_PI / 180);
+	rotation(proj, 13, 10 * M_PI / 180);
 	scaling(proj);
-	centering(proj, WIN_X / 2 - (proj->list[0][proj->width - 1].x + \
-		proj->list[0][0].x) / 2, WIN_Y / 2  - \
-		(proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2);
 	ft_strdel(&buf);
 }

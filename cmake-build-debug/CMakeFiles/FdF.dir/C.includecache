@@ -392,6 +392,10 @@ string.h
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h
 
+/Users/oshvorak/FdF/src/make_list.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
 /Users/oshvorak/FdF/src/modification.c
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h

@@ -6,13 +6,13 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 15:17:45 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 16:56:18 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:36:30 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-void modification(t_proj *proj, double dx, double dy, double dz)
+void	modification(t_proj *proj, double dx, double dy, double dz)
 {
 	int x;
 	int y;

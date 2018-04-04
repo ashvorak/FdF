@@ -6,13 +6,13 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 15:16:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/03/30 15:16:41 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:47:24 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-void zoom(t_proj *proj, double scale)
+void	zoom(t_proj *proj, double scale)
 {
 	int x;
 	int y;

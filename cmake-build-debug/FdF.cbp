@@ -366,6 +366,9 @@
 		<Unit filename="/Users/oshvorak/FdF/src/main.c">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/make_list.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/modification.c">
 			<Option target="FdF"/>
 		</Unit>

@@ -93,6 +93,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FdF.dir/src/zoom.c.o"
   "CMakeFiles/FdF.dir/src/centering.c.o"
   "CMakeFiles/FdF.dir/src/change_color.c.o"
+  "CMakeFiles/FdF.dir/src/make_list.c.o"
   "CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o"
   "FdF.pdb"
   "FdF"

@@ -103,6 +103,8 @@ add_executable(FdF
         src/rotation.c
         src/zoom.c
         src/centering.c
-        src/change_color.c lib/ft_atoi_base.c)
+        src/change_color.c
+        src/make_list.c
+        lib/ft_atoi_base.c)
 
 target_link_libraries(FdF -lmlx "-framework OpenGL" "-framework AppKit")

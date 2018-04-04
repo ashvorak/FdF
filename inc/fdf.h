@@ -6,14 +6,14 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 17:40:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/03 17:30:41 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 15:33:16 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 
-#include  <stdio.h>
+# include <stdio.h>
 # include <fcntl.h>
 # include <stdlib.h>
 # include <errno.h>
@@ -24,9 +24,9 @@
 # include "../minilibx/mlx.h"
 # include "../minilibx_macos/mlx.h"
 
-#define WIN_X 1500
-#define	WIN_Y 1000
-#define SCALE 30
+# define WIN_X 1500
+# define WIN_Y 1000
+# define SCALE 30
 
 typedef struct	s_coor
 {
@@ -50,14 +50,16 @@ typedef struct	s_proj
 	int		endian;
 }				t_proj;
 
-void	read_file(int fd, t_proj *proj);
-void	zoom(t_proj *proj, double scale);
-void	modification(t_proj *proj, double dx, double dy, double dz);
-void	display(t_proj *proj);
-void	line(t_proj *gen, t_coor t1, t_coor t2);
-int		move(int key, t_proj *proj);
-void	centering(t_proj *proj, double dx, double dy);
-void	rotation(t_proj *proj, int key, double angle);
-void	change_color(t_proj *proj, int key);
+void			read_file(int fd, t_proj *proj);
+void			make_list(t_proj *proj, char *buf);
+void			free_arr(char **arr);
+void			zoom(t_proj *proj, double scale);
+void			modification(t_proj *proj, double dx, double dy, double dz);
+void			display(t_proj *proj);
+void			line(t_proj *gen, t_coor t1, t_coor t2);
+int				move(int key, t_proj *proj);
+void			centering(t_proj *proj, double dx, double dy);
+void			rotation(t_proj *proj, int key, double angle);
+void			change_color(t_proj *proj, int key);
 
 #endif

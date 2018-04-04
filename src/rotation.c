@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 16:42:43 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/03 17:12:07 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:45:57 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ void	rotate_x(t_proj *proj, double angle)
 		while (x < proj->width)
 		{
 			tmp = proj->list[y][x].y;
-			proj->list[y][x].y = proj->list[y][x].y * cos(angle) + proj->list[y][x].z * sin(angle);
-			proj->list[y][x].z = -tmp * sin(angle) + proj->list[y][x].z * cos(angle);
+			proj->list[y][x].y = proj->list[y][x].y \
+			* cos(angle) + proj->list[y][x].z * sin(angle);
+			proj->list[y][x].z = -tmp * sin(angle) \
+			+ proj->list[y][x].z * cos(angle);
 			x++;
 		}
 		y++;
@@ -46,8 +48,10 @@ void	rotate_y(t_proj *proj, double angle)
 		while (x < proj->width)
 		{
 			tmp = proj->list[y][x].x;
-			proj->list[y][x].x = proj->list[y][x].x * cos(angle) + proj->list[y][x].z * sin(angle);
-			proj->list[y][x].z = -tmp * sin(angle) + proj->list[y][x].z * cos(angle);
+			proj->list[y][x].x = proj->list[y][x].x \
+			* cos(angle) + proj->list[y][x].z * sin(angle);
+			proj->list[y][x].z = -tmp * sin(angle) \
+			+ proj->list[y][x].z * cos(angle);
 			x++;
 		}
 		y++;
@@ -67,8 +71,10 @@ void	rotate_z(t_proj *proj, double angle)
 		while (x < proj->width)
 		{
 			tmp = proj->list[y][x].x;
-			proj->list[y][x].x = proj->list[y][x].x * cos(angle) - proj->list[y][x].y * sin(angle);
-			proj->list[y][x].y = tmp * sin(angle) + proj->list[y][x].y * cos(angle);
+			proj->list[y][x].x = proj->list[y][x].x \
+			* cos(angle) - proj->list[y][x].y * sin(angle);
+			proj->list[y][x].y = tmp * sin(angle) \
+			+ proj->list[y][x].y * cos(angle);
 			x++;
 		}
 		y++;

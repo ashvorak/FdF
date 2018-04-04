@@ -6,13 +6,13 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/03 13:10:16 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:38:10 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-t_proj *new_proj()
+static t_proj	*new_proj(void)
 {
 	t_proj *proj;
 
@@ -30,13 +30,13 @@ t_proj *new_proj()
 	return (proj);
 }
 
-int exit_x()
+static int		exit_x(void)
 {
 	system("leaks fdf");
 	exit(0);
 }
 
-void free_proj(t_proj *proj)
+static void		free_proj(t_proj *proj)
 {
 	int i;
 
@@ -49,7 +49,7 @@ void free_proj(t_proj *proj)
 	free(proj->list);
 }
 
-int	main(int argc, char **argv)
+int				main(int argc, char **argv)
 {
 	int		fd;
 	t_proj	*proj;
@@ -62,7 +62,7 @@ int	main(int argc, char **argv)
 	proj->win_image = mlx_new_image(proj->mlx_ptr, WIN_X, WIN_Y);
 	display(proj);
 	mlx_hook(proj->win_ptr, 2, 5, move, proj);
-	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);	
+	mlx_hook(proj->win_ptr, 17, 1L << 17, exit_x, proj);
 	mlx_loop(proj->mlx_ptr);
 	free_proj(proj);
 	system("leaks fdf");

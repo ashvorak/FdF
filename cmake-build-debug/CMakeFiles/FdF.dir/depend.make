@@ -303,6 +303,14 @@ CMakeFiles/FdF.dir/src/main.c.o: ../minilibx/mlx.h
 CMakeFiles/FdF.dir/src/main.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/FdF.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/FdF.dir/src/make_list.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/make_list.c.o: ../src/make_list.c
+
 CMakeFiles/FdF.dir/src/modification.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/modification.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/FdF.dir/src/modification.c.o: ../lib/get_next_line/get_next_line.h

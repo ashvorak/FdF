@@ -6,18 +6,18 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 17:22:10 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/03 17:31:53 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:36:15 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-void change_color(t_proj *proj, int key)
+void	change_color(t_proj *proj, int key)
 {
-	int x;
-	int y;
-	char *color;
-	
+	int		x;
+	int		y;
+	char	*color;
+
 	if (key == 15)
 		color = ft_strdup("ff0000");
 	else if (key == 5)

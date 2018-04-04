@@ -94,6 +94,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/FdF/src/display.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/display.c.o"
   "/Users/oshvorak/FdF/src/line.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/line.c.o"
   "/Users/oshvorak/FdF/src/main.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/main.c.o"
+  "/Users/oshvorak/FdF/src/make_list.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/make_list.c.o"
   "/Users/oshvorak/FdF/src/modification.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/modification.c.o"
   "/Users/oshvorak/FdF/src/move.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/move.c.o"
   "/Users/oshvorak/FdF/src/read_file.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/read_file.c.o"

@@ -2553,6 +2553,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/make_list.o: src/make_list.c.o
+
+.PHONY : src/make_list.o
+
+# target to build an object file
+src/make_list.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/make_list.c.o
+.PHONY : src/make_list.c.o
+
+src/make_list.i: src/make_list.c.i
+
+.PHONY : src/make_list.i
+
+# target to preprocess a source file
+src/make_list.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/make_list.c.i
+.PHONY : src/make_list.c.i
+
+src/make_list.s: src/make_list.c.s
+
+.PHONY : src/make_list.s
+
+# target to generate assembly for a file
+src/make_list.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/make_list.c.s
+.PHONY : src/make_list.c.s
+
 src/modification.o: src/modification.c.o
 
 .PHONY : src/modification.o
@@ -2967,6 +2994,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/make_list.o"
+	@echo "... src/make_list.i"
+	@echo "... src/make_list.s"
 	@echo "... src/modification.o"
 	@echo "... src/modification.i"
 	@echo "... src/modification.s"
