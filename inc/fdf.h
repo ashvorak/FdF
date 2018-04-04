@@ -57,7 +57,7 @@ void	display(t_proj *proj);
 void	line(t_proj *gen, t_coor t1, t_coor t2);
 int		move(int key, t_proj *proj);
 void	centering(t_proj *proj, double dx, double dy);
-void	rotation(t_proj *proj, int key);
+void	rotation(t_proj *proj, int key, double angle);
 void	change_color(t_proj *proj, int key);
 
 #endif

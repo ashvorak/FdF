@@ -69,7 +69,7 @@ static void	scaling(t_proj *proj)
 	scale = (scale / 100) * SCALE;
 	zoom(proj, scale);
 }
-
+/*
 static	void	center(t_proj *proj)
 {
 	int		x;
@@ -92,7 +92,7 @@ static	void	center(t_proj *proj)
 		y++;
 	}
 }
-
+*/
 void	read_file(int fd, t_proj *proj)
 {
 	int		i;
@@ -129,7 +129,12 @@ void	read_file(int fd, t_proj *proj)
 		proj->height++;
 	}
 	make_list(proj, buf);
+	//rotation(proj, 6, 10 * M_PI / 180);
+	//rotation(proj, 0, 5 * M_PI / 180);
+	rotation(proj, 13, 5 * M_PI / 180);
 	scaling(proj);
-	center(proj);
+	centering(proj, WIN_X / 2 - (proj->list[0][proj->width - 1].x + \
+		proj->list[0][0].x) / 2, WIN_Y / 2  - \
+		(proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2);
 	ft_strdel(&buf);
 }

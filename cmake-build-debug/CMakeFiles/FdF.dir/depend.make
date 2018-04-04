@@ -263,6 +263,22 @@ CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get
 CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o: ../lib/libft.h
 
+CMakeFiles/FdF.dir/src/centering.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/centering.c.o: ../src/centering.c
+
+CMakeFiles/FdF.dir/src/change_color.c.o: ../inc/fdf.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../lib/libft.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../minilibx/mlx.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/FdF.dir/src/change_color.c.o: ../src/change_color.c
+
 CMakeFiles/FdF.dir/src/display.c.o: ../inc/fdf.h
 CMakeFiles/FdF.dir/src/display.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/FdF.dir/src/display.c.o: ../lib/get_next_line/get_next_line.h

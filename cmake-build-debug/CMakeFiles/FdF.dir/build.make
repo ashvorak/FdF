@@ -2265,9 +2265,57 @@ CMakeFiles/FdF.dir/src/zoom.c.o.provides: CMakeFiles/FdF.dir/src/zoom.c.o.requir
 CMakeFiles/FdF.dir/src/zoom.c.o.provides.build: CMakeFiles/FdF.dir/src/zoom.c.o
 
 
+CMakeFiles/FdF.dir/src/centering.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/centering.c.o: ../src/centering.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/FdF.dir/src/centering.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/centering.c.o   -c /Users/oshvorak/FdF/src/centering.c
+
+CMakeFiles/FdF.dir/src/centering.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/centering.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/centering.c > CMakeFiles/FdF.dir/src/centering.c.i
+
+CMakeFiles/FdF.dir/src/centering.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/centering.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/centering.c -o CMakeFiles/FdF.dir/src/centering.c.s
+
+CMakeFiles/FdF.dir/src/centering.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/centering.c.o.requires
+
+CMakeFiles/FdF.dir/src/centering.c.o.provides: CMakeFiles/FdF.dir/src/centering.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/centering.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/centering.c.o.provides
+
+CMakeFiles/FdF.dir/src/centering.c.o.provides.build: CMakeFiles/FdF.dir/src/centering.c.o
+
+
+CMakeFiles/FdF.dir/src/change_color.c.o: CMakeFiles/FdF.dir/flags.make
+CMakeFiles/FdF.dir/src/change_color.c.o: ../src/change_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/FdF.dir/src/change_color.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/src/change_color.c.o   -c /Users/oshvorak/FdF/src/change_color.c
+
+CMakeFiles/FdF.dir/src/change_color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FdF.dir/src/change_color.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/FdF/src/change_color.c > CMakeFiles/FdF.dir/src/change_color.c.i
+
+CMakeFiles/FdF.dir/src/change_color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FdF.dir/src/change_color.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/FdF/src/change_color.c -o CMakeFiles/FdF.dir/src/change_color.c.s
+
+CMakeFiles/FdF.dir/src/change_color.c.o.requires:
+
+.PHONY : CMakeFiles/FdF.dir/src/change_color.c.o.requires
+
+CMakeFiles/FdF.dir/src/change_color.c.o.provides: CMakeFiles/FdF.dir/src/change_color.c.o.requires
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/change_color.c.o.provides.build
+.PHONY : CMakeFiles/FdF.dir/src/change_color.c.o.provides
+
+CMakeFiles/FdF.dir/src/change_color.c.o.provides.build: CMakeFiles/FdF.dir/src/change_color.c.o
+
+
 CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o: CMakeFiles/FdF.dir/flags.make
 CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o: ../lib/ft_atoi_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o   -c /Users/oshvorak/FdF/lib/ft_atoi_base.c
 
 CMakeFiles/FdF.dir/lib/ft_atoi_base.c.i: cmake_force
@@ -2383,6 +2431,8 @@ FdF_OBJECTS = \
 "CMakeFiles/FdF.dir/src/read_file.c.o" \
 "CMakeFiles/FdF.dir/src/rotation.c.o" \
 "CMakeFiles/FdF.dir/src/zoom.c.o" \
+"CMakeFiles/FdF.dir/src/centering.c.o" \
+"CMakeFiles/FdF.dir/src/change_color.c.o" \
 "CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o"
 
 # External object files for target FdF
@@ -2480,10 +2530,12 @@ FdF: CMakeFiles/FdF.dir/src/move.c.o
 FdF: CMakeFiles/FdF.dir/src/read_file.c.o
 FdF: CMakeFiles/FdF.dir/src/rotation.c.o
 FdF: CMakeFiles/FdF.dir/src/zoom.c.o
+FdF: CMakeFiles/FdF.dir/src/centering.c.o
+FdF: CMakeFiles/FdF.dir/src/change_color.c.o
 FdF: CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o
 FdF: CMakeFiles/FdF.dir/build.make
 FdF: CMakeFiles/FdF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Linking C executable FdF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable FdF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FdF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2583,6 +2635,8 @@ CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/move.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/read_file.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/rotation.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/zoom.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/centering.c.o.requires
+CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/src/change_color.c.o.requires
 CMakeFiles/FdF.dir/requires: CMakeFiles/FdF.dir/lib/ft_atoi_base.c.o.requires
 
 .PHONY : CMakeFiles/FdF.dir/requires

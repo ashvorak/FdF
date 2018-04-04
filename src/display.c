@@ -14,10 +14,17 @@
 
 void show_menu(t_proj *proj)
 {
-	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 30, 0xFFFFFF, "ZOOM +, -");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 30, 0xFFFFFF, "ZOOM : +, -");
 	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 60, 0xFFFFFF, "MOVE : ARROWS");
-	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 90, 0xFFFFFF, "ROTATE : X, Y, Z");
-	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 120, 0xFFFFFF, "EXIT : ESC");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 90, 0xFFFFFF, "ROTATE (X) : W, S");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 120, 0xFFFFFF, "ROTATE (Y) : A, D");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 150, 0xFFFFFF, "ROTATE (Z) : Z, E");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 180, 0xFFFFFF, "PUT CENTER : C");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 210, 0xFFFFFF, "CHANGE COLOR : ");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 60, 240, 0xFF0000, "R - RED");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 60, 270, 0x00FF00, "G - GREEN");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 60, 300, 0x0000FF, "B - BLUE");
+	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 30, 330, 0xFFFFFF, "EXIT : ESC");
 	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 1300, 950, 0xFFFFFF, "MADE BY : OSHVORAK");
 }
 

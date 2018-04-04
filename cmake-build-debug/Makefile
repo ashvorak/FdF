@@ -2418,6 +2418,60 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/centering.o: src/centering.c.o
+
+.PHONY : src/centering.o
+
+# target to build an object file
+src/centering.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/centering.c.o
+.PHONY : src/centering.c.o
+
+src/centering.i: src/centering.c.i
+
+.PHONY : src/centering.i
+
+# target to preprocess a source file
+src/centering.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/centering.c.i
+.PHONY : src/centering.c.i
+
+src/centering.s: src/centering.c.s
+
+.PHONY : src/centering.s
+
+# target to generate assembly for a file
+src/centering.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/centering.c.s
+.PHONY : src/centering.c.s
+
+src/change_color.o: src/change_color.c.o
+
+.PHONY : src/change_color.o
+
+# target to build an object file
+src/change_color.c.o:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/change_color.c.o
+.PHONY : src/change_color.c.o
+
+src/change_color.i: src/change_color.c.i
+
+.PHONY : src/change_color.i
+
+# target to preprocess a source file
+src/change_color.c.i:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/change_color.c.i
+.PHONY : src/change_color.c.i
+
+src/change_color.s: src/change_color.c.s
+
+.PHONY : src/change_color.s
+
+# target to generate assembly for a file
+src/change_color.c.s:
+	$(MAKE) -f CMakeFiles/FdF.dir/build.make CMakeFiles/FdF.dir/src/change_color.c.s
+.PHONY : src/change_color.c.s
+
 src/display.o: src/display.c.o
 
 .PHONY : src/display.o
@@ -2898,6 +2952,12 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/centering.o"
+	@echo "... src/centering.i"
+	@echo "... src/centering.s"
+	@echo "... src/change_color.o"
+	@echo "... src/change_color.i"
+	@echo "... src/change_color.s"
 	@echo "... src/display.o"
 	@echo "... src/display.i"
 	@echo "... src/display.s"

@@ -351,6 +351,12 @@
 		<Unit filename="/Users/oshvorak/FdF/lib/libft.h">
 			<Option target="FdF"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/centering.c">
+			<Option target="FdF"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/FdF/src/change_color.c">
+			<Option target="FdF"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/FdF/src/display.c">
 			<Option target="FdF"/>
 		</Unit>

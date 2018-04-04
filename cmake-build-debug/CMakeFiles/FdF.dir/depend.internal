@@ -263,6 +263,22 @@ CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o
  /Users/oshvorak/FdF/lib/get_next_line/get_next_line.c
  /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
  /Users/oshvorak/FdF/lib/libft.h
+CMakeFiles/FdF.dir/src/centering.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/centering.c
+CMakeFiles/FdF.dir/src/change_color.c.o
+ /Users/oshvorak/FdF/inc/fdf.h
+ /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/FdF/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/FdF/lib/libft.h
+ /Users/oshvorak/FdF/minilibx/mlx.h
+ /Users/oshvorak/FdF/minilibx_macos/mlx.h
+ /Users/oshvorak/FdF/src/change_color.c
 CMakeFiles/FdF.dir/src/display.c.o
  /Users/oshvorak/FdF/inc/fdf.h
  /Users/oshvorak/FdF/lib/ft_printf/inc/ft_printf.h

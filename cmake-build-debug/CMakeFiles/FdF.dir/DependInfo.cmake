@@ -89,6 +89,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/FdF/lib/ft_tolower.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/lib/ft_tolower.c.o"
   "/Users/oshvorak/FdF/lib/ft_toupper.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/lib/ft_toupper.c.o"
   "/Users/oshvorak/FdF/lib/get_next_line/get_next_line.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/lib/get_next_line/get_next_line.c.o"
+  "/Users/oshvorak/FdF/src/centering.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/centering.c.o"
+  "/Users/oshvorak/FdF/src/change_color.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/change_color.c.o"
   "/Users/oshvorak/FdF/src/display.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/display.c.o"
   "/Users/oshvorak/FdF/src/line.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/line.c.o"
   "/Users/oshvorak/FdF/src/main.c" "/Users/oshvorak/FdF/cmake-build-debug/CMakeFiles/FdF.dir/src/main.c.o"

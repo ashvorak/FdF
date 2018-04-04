@@ -75,9 +75,8 @@ void	rotate_z(t_proj *proj, double angle)
 	}
 }
 
-void	rotation(t_proj *proj, int key)
+void	rotation(t_proj *proj, int key, double angle)
 {
-	double angle;
 	double dx;
 	double dy;
 	double dxx;
@@ -85,12 +84,11 @@ void	rotation(t_proj *proj, int key)
 
 	dx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
 	dy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;
-	angle = 5 * M_PI / 180;
-	if (key == 6)
+	if (key == 6 || key == 14)
 		rotate_z(proj, angle);
-	else if (key == 7)
+	else if (key == 1 || key == 13)
 		rotate_x(proj, angle);
-	else if (key == 16)
+	else if (key == 0 || key == 2)
 		rotate_y(proj, angle);
 	dxx = (proj->list[0][proj->width - 1].x + proj->list[0][0].x) / 2;
 	dyy = (proj->list[proj->height - 1][0].y + proj->list[0][0].y) / 2;

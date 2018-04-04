@@ -372,6 +372,14 @@ string.h
 
 /Users/oshvorak/FdF/minilibx_macos/mlx.h
 
+/Users/oshvorak/FdF/src/centering.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
+/Users/oshvorak/FdF/src/change_color.c
+../inc/fdf.h
+/Users/oshvorak/FdF/inc/fdf.h
+
 /Users/oshvorak/FdF/src/display.c
 ../inc/fdf.h
 /Users/oshvorak/FdF/inc/fdf.h
