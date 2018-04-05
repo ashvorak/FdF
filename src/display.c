@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 12:59:59 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/04 14:09:55 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/05 15:26:08 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,11 @@ static void	show_menu(t_proj *proj)
 	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 60, 240, 0xFF0000, "R - RED");
 	mlx_string_put(proj->mlx_ptr, \
 	proj->win_ptr, 60, 270, 0x00FF00, "G - GREEN");
+	mlx_string_put(proj->mlx_ptr, \
+	proj->win_ptr, 60, 300, 0x00FF00, "F - WHITE");
 	mlx_string_put(proj->mlx_ptr, proj->win_ptr, 60, 300, 0x0000FF, "B - BLUE");
 	mlx_string_put(proj->mlx_ptr, \
-	proj->win_ptr, 30, 330, 0xFFFFFF, "EXIT : ESC");
+	proj->win_ptr, 30, 360, 0xFFFFFF, "EXIT : ESC");
 	mlx_string_put(proj->mlx_ptr, proj->win_ptr,\
 	1300, 950, 0xFFFFFF, "MADE BY : OSHVORAK");
 }

@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 14:37:00 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/04 13:50:50 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/05 15:26:40 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int			move(int key, t_proj *proj)
 	else if (key == 0 || key == 1 || key == 2 || \
 	key == 13 || key == 6 || key == 14)
 		rotate_proj(proj, key);
-	else if (key == 15 || key == 5 || key == 11)
+	else if (key == 15 || key == 5 || key == 11 || key == 3)
 		change_color(proj, key);
 	else if (key == 8)
 		centering(proj, WIN_X / 2 - (proj->list[0][proj->width - 1].x + \

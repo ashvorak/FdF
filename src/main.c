@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/26 18:22:23 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/04 13:38:10 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/04/05 15:01:21 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,13 @@ int				main(int argc, char **argv)
 	t_proj	*proj;
 
 	proj = new_proj();
-	(argc == 2) ? fd = open(argv[1], O_RDONLY) : exit(1);
+	if (argc == 2)
+		fd = open(argv[1], O_RDONLY);
+	else
+	{
+		ft_printf("Usage : ./fdf <filename>\n");
+		exit(1);
+	}
 	read_file(fd, proj);
 	proj->mlx_ptr = mlx_init();
 	proj->win_ptr = mlx_new_window(proj->mlx_ptr, WIN_X, WIN_Y, "FdF");
