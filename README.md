@@ -6,8 +6,11 @@ hence the name of the project) representation of a relief landscape linking vari
 a parameter to your program.
 
 Each number corresponds to a point in space:
+
 • The horizontal position corresponds to its axis.
+
 • The vertical position corresponds to its ordinate.
+
 • The value corresponds to its altitude.
 
 Examples:
